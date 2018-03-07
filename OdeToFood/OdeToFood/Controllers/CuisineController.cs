@@ -9,9 +9,12 @@ namespace OdeToFood.Controllers
     public class CuisineController : Controller
     {
         // GET: Cuisine
-        [HttpPost]
+        // [HttpPost]
+        // [Authorize]
         public ActionResult Search(string name = "Index")
         {
+            throw new Exception("Something terrible has happened");
+            
             var message = Server.HtmlEncode(name);
 
             // var name = RouteData.Values["name"];
